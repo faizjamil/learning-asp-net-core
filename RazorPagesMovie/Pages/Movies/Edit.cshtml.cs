@@ -28,7 +28,8 @@ namespace RazorPagesMovie.Pages.Movies
             {
                 return NotFound();
             }
-
+            // gets movie based on id passed to method and returns page method
+            // page method renders the edit razor page
             Movie = await _context.Movie.FirstOrDefaultAsync(m => m.ID == id);
 
             if (Movie == null)
