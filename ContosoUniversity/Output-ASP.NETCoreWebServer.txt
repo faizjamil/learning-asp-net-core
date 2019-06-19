@@ -1,0 +1,30 @@
+﻿ContosoUniversity> Starting IIS Express ...
+ContosoUniversity> Successfully registered URL "http://localhost:50532/" for site "ContosoUniversity" application "/"
+ContosoUniversity> Successfully registered URL "https://localhost:44372/" for site "ContosoUniversity" application "/"
+ContosoUniversity> Registration completed for site "ContosoUniversity"
+ContosoUniversity> IIS Express is running.
+ContosoUniversity> Request started: "GET" https://localhost:44372/
+ContosoUniversity> Response sent: https://localhost:44372/ with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/ with HTTP status 200.0
+ContosoUniversity> Request started: "GET" https://localhost:44372/lib/bootstrap/dist/css/bootstrap.css
+ContosoUniversity> Request started: "GET" https://localhost:44372/css/site.css
+ContosoUniversity> Request started: "GET" https://localhost:44372/lib/jquery/dist/jquery.js
+ContosoUniversity> Request started: "GET" https://localhost:44372/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18
+ContosoUniversity> Request started: "GET" https://localhost:44372/lib/bootstrap/dist/js/bootstrap.bundle.js
+ContosoUniversity> Response sent: https://localhost:44372/lib/bootstrap/dist/js/bootstrap.bundle.js with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18 with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/css/site.css with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/lib/bootstrap/dist/css/bootstrap.css with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/lib/jquery/dist/jquery.js with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/css/site.css with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18 with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/lib/bootstrap/dist/js/bootstrap.bundle.js with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/lib/bootstrap/dist/css/bootstrap.css with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/lib/jquery/dist/jquery.js with HTTP status 200.0
+ContosoUniversity> Request started: "GET" https://localhost:44372/favicon.ico
+ContosoUniversity> Response sent: https://localhost:44372/favicon.ico with HTTP status 200.0
+ContosoUniversity> Response sent: https://localhost:44372/favicon.ico with HTTP status 200.0
+ContosoUniversity> Request started: "GET" https://localhost:44372/Students
+ContosoUniversity> Response sent: https://localhost:44372/Students with HTTP status 500.0
+ContosoUniversity> Response sent: https://localhost:44372/Students with HTTP status 500.0
+ContosoUniversity> Response sent: https://localhost:44372/Students with HTTP status 500.0

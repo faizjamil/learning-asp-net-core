@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using ContosoUniversity.Models;
+﻿using ContosoUniversity.Models;                   // SchoolContext
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;   // CreateScope
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace ContosoUniversity
 {
@@ -21,17 +16,18 @@ namespace ContosoUniversity
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
+
                 try
                 {
                     var context = services.GetRequiredService<SchoolContext>();
-                    //context.Database.EnsureCreated();
-                    // using ContosoUniversity.Data;
+                    context.Database.EnsureCreated();
+                    // using ContosoUniversity.Data; 
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "An error occured creating the DB.");
+                    logger.LogError(ex, "An error occurred creating the DB.");
                 }
             }
 
