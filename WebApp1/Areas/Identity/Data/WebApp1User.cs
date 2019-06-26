@@ -9,5 +9,9 @@ namespace WebApp1.Areas.Identity.Data
     // Add profile data for application users by adding properties to the WebApp1User class
     public class WebApp1User : IdentityUser
     {
+        [PersonalData]
+        public string Name { get; set; }
+        [PersonalData]
+        public DateTime DOB { get; set; }
     }
 }
