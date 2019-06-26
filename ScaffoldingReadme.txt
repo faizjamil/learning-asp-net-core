@@ -22,6 +22,14 @@ Startup.cs
 	services.AddDefaultIdentity -> services.AddIdentity<WebApp1User, IdentityRole>()
 to WebApp1User (or different name depending on your project)
 
+Make sure ApplicationDbContext in ApplicationDbContext inherits from IdentityDbContext<WebApp1User>
+
+Comment out services.AddDefaultIdentity in IdentityHostingStartup.cs
+Found in ~/Areas/Identity
+
+
+Add the AddDefaultTokenProvider method at the end of services.AddIdentity
+
 
 The generated database code requires Entity Framework Core Migrations. Run the following commands:
 1. dotnet ef migrations add CreateIdentitySchema
