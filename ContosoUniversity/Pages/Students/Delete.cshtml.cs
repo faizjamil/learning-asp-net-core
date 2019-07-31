@@ -42,6 +42,7 @@ namespace ContosoUniversity.Pages.Students
             {
                 ErrorMessage = "Delete failed. Try again";
             }
+			
             return Page();
         }
 
@@ -56,11 +57,11 @@ namespace ContosoUniversity.Pages.Students
                 .AsNoTracking()
                 .FirstOrDefaultAsync(m => m.ID == id);
 
-            if (Student == null)
-            {
-                return NotFound();
-            }
-
+            if (student == null)
+			{
+				return NotFound();
+			}
+				
             try
             {
                 _context.Student.Remove(student);

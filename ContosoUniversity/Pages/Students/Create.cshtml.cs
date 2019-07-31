@@ -31,6 +31,7 @@ namespace ContosoUniversity.Pages.Students
 
             var emptyStudent = new Student();
 
+
             if (await TryUpdateModelAsync<Student>(
                 emptyStudent,
                 "student",   // Prefix for form value.
@@ -40,7 +41,7 @@ namespace ContosoUniversity.Pages.Students
                 await _context.SaveChangesAsync();
                 return RedirectToPage("./Index");
             }
-
+			
             return null;
         }
     }
